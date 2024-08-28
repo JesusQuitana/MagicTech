@@ -1,0 +1,32 @@
+//COLORES
+$negro: #000;
+$blanco: #fff;
+$gris: #807e7e;
+$grisOscuro: #3d3b3b;
+$rojo: #ac2222;
+$azul: #1c497c;
+$verde: #169937;
+$amarillo: #d2dd37;
+
+//MIXINS
+@mixin telf {
+    @media (min-width: 10px) and (max-width: 480px) {
+        @content;
+    }
+}
+@mixin tablet {
+    @media (min-width: 481px) and (max-width: 780px) {
+        @content;
+    }
+}
+
+@mixin grid($column, $gap : 0rem) {
+    display: grid;
+    grid-template-columns: repeat($column, 1fr);
+    gap: $gap;
+}
+@mixin flex($direction : row) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: center;
+}

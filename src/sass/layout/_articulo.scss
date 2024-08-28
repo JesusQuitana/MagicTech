@@ -1,0 +1,13 @@
+.articulo {
+    @include grid(2, 2rem);
+    place-items: center;
+    margin-bottom: 3rem;
+    color: $blanco;
+    text-align: justify;
+
+    h3 {
+        text-align: center;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+}

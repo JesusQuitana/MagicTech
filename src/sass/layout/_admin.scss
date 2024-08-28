@@ -1,0 +1,82 @@
+.admin {
+    margin-bottom: 5rem;
+    h2 {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+}
+
+.articulos_admin {
+    font-family: "Poppins", "sans-serif";
+    border: 1px solid $negro;
+    margin-top: 3rem;
+
+    thead {
+        font-weight: 500;
+    }
+
+    td {
+        font-size: 1.5rem;
+        border: 1px solid $negro;
+
+        img {
+            width: 20rem;
+        }
+    }
+
+    .articulo_img {
+        display: grid;
+        place-items: center;
+        padding: 1rem 1rem;
+    }
+
+    .articulo_accion {
+        @include flex(column);
+        gap: 1rem;
+    }
+}
+
+.detalles_producto {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    @include grid(2, 1rem);
+    place-items: center;
+    padding-bottom: 2rem;
+
+    div {
+        @include flex(column);
+    }
+
+    div:nth-child(5) {
+        grid-row: 1/2;
+        grid-column: 2/3;
+        border: 1px solid $gris;
+        width:max-content;
+        height: max-content;
+        padding: 0 1rem;
+        border-radius: 5px;
+        
+    }
+
+    .mostrar_imagen {
+        grid-row: 2/4;
+        grid-column: 2/3;
+        border: 1px solid $gris;
+    }
+}
+
+.alerta {
+    margin: 1rem 2rem;
+    padding: 1rem 2rem;
+    font-weight: 500;
+    color: $blanco;
+        &.roja {
+            background-color: $rojo;
+        }
+        &.verde {
+            background-color: $verde;
+        }
+        &.amarilla {
+            background-color: darken($amarillo, 10%);
+        }
+}

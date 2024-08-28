@@ -1,0 +1,43 @@
+header {
+    background-image: url(../../../build/img/header.jpg);
+    background-image: url(../../../build/img/header.webp);
+    background-image: url(../../../build/img/header.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30rem;
+}
+
+.fondo_header {
+    background-color: rgba($grisOscuro, 0.6);
+    height: 30rem;
+}
+
+.header, .footer {
+    margin: 0 auto;
+    padding: 5rem;
+    @include flex();
+    justify-content: space-between;
+
+    .barra_nav {
+        margin-right: 15rem;
+
+        a {
+            padding: 1rem 3rem;
+            color: $blanco;
+            font-weight: 500;
+            &:hover {
+                color: $amarillo;
+            }
+        }
+    }
+}
+.titulo {
+    color: $blanco;
+    font-size: 3.5rem;
+    width: auto;
+    margin-left: 10rem;
+
+    span {
+        font-weight: bold;
+    }
+}

@@ -1,0 +1,27 @@
+.contacto {
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+
+    h2 {
+        margin: 3rem 1rem;
+    }
+}
+
+.contenedor_contacto {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    @include flex(column);
+    gap: .5rem;
+    align-items: flex-start;
+    padding: 2rem 1rem;
+
+    .inputs_contacto {
+        width: 100%;
+    }
+
+    .telefono {
+        @include flex();
+        gap: 1rem;
+        width: 100%;
+    }
+}

@@ -1,0 +1,21 @@
+.inventario {
+    @include grid(3, 5rem);
+    margin-bottom: 3rem;
+    h2 {
+        margin-top: 5rem;
+        grid-column: 1/4;
+    }
+    article {
+        display: flex;
+        flex-direction: column;
+        border: 3px solid darken($gris, 10%);
+        padding: 3rem;
+        border-radius: 20px;
+        background-color: #e1e1e1;
+
+        span {
+            color: $verde;
+            font-weight: 500;
+        }
+    }
+}

@@ -1,0 +1,18 @@
+Base de Datos: clientes_producto;
+
+Tablas:
+    Productos {
+        ID INT(11) PRIMARY KEY
+        TITULO VARCHAR(20)
+        PRECIO INT(11)
+        DESCRIPCION VARCHAR(255)
+        DISPONIBLE VARCHAR(4)
+        CANTIDAD INT(11)
+        IMAGEN VARCHAR(60)
+        CATEGORIA_ID INT(11) FOREIGN KEY
+    } 
+
+    Categoria {
+        ID INT(11) PRIMARY KEY
+        CATEGORIA VARCHAR(45)
+    }

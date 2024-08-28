@@ -1,0 +1,12 @@
+.main-1 {
+    @include grid(2, 1rem);
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    place-items: center;
+
+    h2 {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        text-transform: capitalize;
+    }
+}

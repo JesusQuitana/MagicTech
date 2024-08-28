@@ -1,0 +1,18 @@
+//GLOBALES
+@import 'base/normalize';
+@import 'base/variables';
+@import 'base/globales';
+
+//HEADER
+@import 'layout/header';
+
+//FOOTER
+@import 'layout/footer';
+
+//LAYOUTS
+@import 'layout/main-1';
+@import 'layout/main-2';
+@import 'layout/contacto';
+@import 'layout/admin';
+@import 'layout/articulo';
+@import 'layout/inventario';

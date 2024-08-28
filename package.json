@@ -1,0 +1,23 @@
+{
+  "name": "poo",
+  "version": "1.0.0",
+  "description": "practicando POO",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "gulp"
+  },
+  "keywords": [
+    "poo",
+    "practica"
+  ],
+  "author": "JesusQ",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^5.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-terser": "^2.1.0",
+    "sass": "^1.77.8",
+    "terser": "^5.31.6"
+  }
+}
